@@ -763,17 +763,3 @@ function fnc__specialcol_(values, context) {
 function fnc_project_color(values, context) {
     return false;
 };
-
-
-
-function exp_label_SierraLeonePlan_3_eval_expression(context) {
-    // Location || ' --- ' || "No of Racks" || ' Racks'
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (((feature.get('Location')  + ' --- ') + feature.get('No of Racks') ) + ' Racks');
-    } else {
-        return (((feature.get('Location')  + ' --- ') + feature.get('No of Racks') ) + ' Racks');
-    }
-}
